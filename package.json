@@ -5,12 +5,9 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "diff": "git diff --name-only --diff-filter=MA main",
     "generate": "nuxt generate",
-    "lint": "npm run diff | xargs eslint",
-    "lint:all": "eslint './**/*.{vue,ts}'",
-    "lint:fix": "npm run diff | xargs eslint --fix",
-    "lint:fix:all": "eslint --fix './**/*.{vue,ts}'",
+    "lint": "eslint './**/*.{vue,ts}'",
+    "lint:fix": "eslint --fix './**/*.{vue,ts}'",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "ts:check": "nuxi typecheck"
